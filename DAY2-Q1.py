@@ -11,16 +11,24 @@ def findValidPasswords():
 
     f = open("day2-q1-input.txt", "r")
     for line in f:
+
+        # Break up each line of text file into array
         split = line.split()
+        # Get the range for how many times the letter can be in the password
         charCount = split[0].split('-')
+        # Get password letter that we are looking for
         passwordLetter = split[1].split(':')[0]
+        # Get password
         password = split[2]
 
         letterCount = 0
         for letter in password:
+            # Count how many times the password letter is in the password
             if letter == str(passwordLetter):
                 letterCount += 1
 
+        # If the letter is in the password more than or equal to the minimum and
+        # less than or equal to the maximum, it is a valid password
         if letterCount >= int(charCount[0]) and letterCount <= int(charCount[1]):
             validPasswords += 1
 
