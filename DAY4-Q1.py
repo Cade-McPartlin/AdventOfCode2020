@@ -46,14 +46,6 @@ def findValidPassports():
                 print('KEYS: ' + str(passportDict.keys()))
                 validPassports += 1
 
-            # validPassportEntry = 0
-            # for field in requiredPassportFields:
-            #     if field in passportDict.keys():
-            #         validPassportEntry += 1
-            #
-            # if validPassportEntry >= 7:
-            #     validPassports += 1
-
             passportStringToDict = ''
             continue
 
