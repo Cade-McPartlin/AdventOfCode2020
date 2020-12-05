@@ -1,4 +1,5 @@
 import json
+# https://adventofcode.com/2020/day/4
 # Passport data is validated in batch files (your puzzle input).
 # Each passport is represented as a sequence of key:value pairs
 # separated by spaces or newlines. Passports are separated by blank lines.
